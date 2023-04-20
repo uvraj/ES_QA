@@ -12,6 +12,7 @@
 \usepackage[parfill]{parskip} 
 \usepackage{lastpage}
 \usepackage{hyperref}
+\usepackage{filemod}
 
 \geometry{
     a4paper,
@@ -33,7 +34,7 @@
 
 % Basic data
 \title{\LARGE \textbf{ES-Fragestellungen}}
-\date{\today}
+\date{2022/23}
 \author{Die Glaubensgemeinschaft der TAEV}
 
 \begin{document}
@@ -68,4 +69,7 @@
     \section{Lichttechnik}
     \input{sections/licht_wahrnehmung.tex}
     \input{sections/leuchtmittel.tex}
+
+    \vfill
+    Zuletzt aktualisiert: \filemodprintdate{\jobname}
 \end{document}
