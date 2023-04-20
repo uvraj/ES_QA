@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+
+\usepackage[ngerman]{babel} 
+\usepackage[a4paper]{geometry} 
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{siunitx}
+\usepackage[parfill]{parskip} 
+\usepackage{lastpage}
+\usepackage{hyperref}
+
+\geometry{
+    a4paper,
+    total={160mm,238mm}
+}
+
+\pagestyle{fancy}
+\headheight 12mm
+
+\renewcommand{\headrulewidth}{0.2pt} 
+\renewcommand{\footrulewidth}{0.2pt}   
+
+\setenumerate[1]{wide = 0pt,labelwidth = 1.25cm, leftmargin =!, label=\textbf{\arabic*}}
+\setenumerate[2]{labelwidth =1.25cm, align = left, leftmargin =0cm, label*=\Roman*}
+\setenumerate[3]{labelwidth =1.25cm, align = left, leftmargin =0cm, label*=.\Roman*}
+
+% NOTE: This line is responsible for the formatting of all our questions.
+\newcommand{\question}[1]{\textit{#1}}
+
+% Basic data
+\title{\LARGE \textbf{ES-Fragestellungen}}
+\date{\today}
+\author{Die Glaubensgemeinschaft der TAEV}
+
+\begin{document}
+    \lhead{}
+    \rhead{}
+    \pagenumbering{Roman}
+
+    \begin{titlepage}
+        \begin{figure}
+            \centering
+            \includegraphics{nullung.pdf}
+        \end{figure}
+
+        \maketitle 
+
+        \tableofcontents
+    \end{titlepage}
+
+    \lfoot{}
+    \cfoot{}
+    \rfoot{Seite \thepage / \pageref{LastPage}}
+
+    \pagenumbering{arabic}
+
+    \section{Anlagenschutz}
+    \input{sections/leitungsschutz.tex}
+    \input{sections/bemessungskriterien.tex}
+
+    \section{Lichttechnik}
+    \input{sections/licht_wahrnehmung.tex}
+    \input{sections/leuchtmittel.tex}
+\end{document}
