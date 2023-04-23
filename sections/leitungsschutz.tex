@@ -3,7 +3,7 @@ Beantworten Sie folgende Fragen:
 
 \begin{enumerate}
     \item   \question{Wodurch kann in Verteilungsnetzen (EVU-Netz, Verbraucheranlage) Überstrom auftreten?} \\\\
-            Durch den Anschluss einer niederohmigen Last oder durch einen Kurzschluss.
+            Durch den Anschluss einer Überlast oder durch einen Kurzschluss.
     \item   \question{Wie erfolgt der Schutz gegen Überstrom in Verbraucheranlagen?} \\\\
             Durch Einbau von Überstrom-Schutzorganen.
     \item   \question{Welche zwei Arten von Überstromschutzorganen kennen Sie?} \\\\
@@ -21,7 +21,7 @@ Beantworten Sie die unten aufgelisteten Aufgabestellungen. Eine Begründung Ihre
             Bemessungsspannung, Bemessungsstrom, Bemessungsschaltvermögen und Betriebsklasse.
 
     \item   \question{Über welche Prüfströme wird die Auslösecharakteristik und Fertigungstoleranz einer Schmelzsicherung festgelegt? Wie sind diese Prüfströme definiert?} \\\\
-            Durch den kleinen und großen Prüfstrom. Der kleine Prüfstrom bezeichnet den Strom, bei den die Sicherung \textbf{nicht} schmelzen darf.
+            Durch den kleinen und großen Prüfstrom. Der kleine Prüfstrom bezeichnet den Strom, bei dem die Sicherung innerhalb der konventionellen Prüfdauer nicht schmelzen darf.
             Der große Prufström beschreibt jenen Strom, bei dem die Sicherung innerhalb einer konventionellen Prüfdauer ausschalten muss.
 
     \clearpage
@@ -46,9 +46,13 @@ Beantworten Sie die unten aufgelisteten Aufgabestellungen. Eine Begründung Ihre
                 \centering
                 \includegraphics[scale = 0.3]{img/NH_Aufbau.png}
             \end{figure}
+            \begin{figure}[!htp]
+                \centering
+                \includegraphics[scale = 0.3]{img/NH_Aufbau_real.PNG}
+            \end{figure}
 
             Funktion: Abschaltung bei Überstrom oder Kurschluss. NH-Sicherungen sind für den Einbau in der Nähe von Transformatorstationen 
-            eingesetzt.
+            und als Hausanschlusssicherung eingesetzt.
 
     \item   \question{Worüber gibt die Betriebsklasse einer Schmelzsicherung auskunft?} \\\\
             Die Betriebsklasse gibt über die Verwendbarkeit von Sicherungen und ihre Strom-Zeit-Kennlinie auskunft.
@@ -56,14 +60,13 @@ Beantworten Sie die unten aufgelisteten Aufgabestellungen. Eine Begründung Ihre
     \item   \question{Nennen Sie 3 Vorteile eines NH-Trenners gegenüber Stöpselsicherungen.} \\\\
             Ein NH-Lasttrenner bietet folgende Vorteile:
             \begin{itemize}
-                \item Federkontakte sind hochwertiger und zuverlässiger
-                \item Glühfaden sind besser konstruiert
-                \item Höheres Ausschaltvermögen durch Löschung von Lichtbogen
+                \item Die massiveren Kontakte können größere Ströme führen
+                \item Stromkreis wird dreipolig geschaltet
+                \item Höheres Ausschaltvermögen
             \end{itemize}      
 
     \item   \question{Unter welchen Bedingungen werden Schmelzsicherungen gegenüber Leitungsschutzschaltern bevorzugt? (+Beispiele)}\\\\
-            Leitungsschutzschalter werden nur in Endstromkreisen bevorzugt.
-            \textbf{\textcolor{red}{TODO}}
+            Wenn Selektivität benötigt wird. \textcolor{red}{Bsp.:?????}
 
     \clearpage
 
@@ -74,12 +77,16 @@ Beantworten Sie die unten aufgelisteten Aufgabestellungen. Eine Begründung Ihre
                 \centering
                 \includegraphics[width = 0.5\textwidth]{img/LSS_Aufbau.png}
             \end{figure}
+            \begin{figure}[!htp]
+                \centering
+                \includegraphics[width = 0.5\textwidth]{img/Leitungsschutzschalter.PNG}
+            \end{figure}
 
             Ein Leitungsschutzschalter besitzt eine thermische (Überlastschutz) und magnetische (Kurzschlusschutz) Auslösung.
 
     \item   \question{Nennen Sie Vorteile von Leitungsschutzschaltern gegenüber Schmelzsicherungen.} \\\\
-            Sie sind wiederverwendbar. Zudem lösen sie bei Kurzschlussen schneller durch. Leitungsschutzschalter lassen sich nicht überbrücken.
-            Daraus folgt, dass Laien sich nicht mehr unter Gefahr setzen können.
+            Können wieder eingeschalten werden -> keine Ersatzsicherungen erforderlich -> kein Einsetzen einer falschen Sicherung möglich. Zudem lösen sie bei Kurzschlussen schneller durch. Leitungsschutzschalter lassen sich nicht überbrücken.
+            Daraus folgt, dass Laien sich nicht mehr unter Gefahr setzen können. Sichere Bedienung. Kompakte Bauweise.  
 
     \clearpage
 
@@ -133,4 +140,7 @@ Lösen Sie folgende Aufgabenstellungen zum Thema Ausschaltstrom / Selektivität
     \item   \question{Was versteht man unter Selektivität von Überstromschutzorgangen? Unter welcher Voraussetzung ist die Selektivität gegeben? Nennen Sie 2 einfache Regeln zur Selektivität.} \\\\
             Selektivität bedeutet, dass im Fehelrfallse nur jenes Überstromschutzorgan abschaltet, das sich unmittelbar vor der Fehlerstelle befindet, und alle anderen betriebsbereit bleiben.
             Durch die Selektivität wird die Betriebssicherheit einer Anlage erheblich verbessert.
+            2 Regeln: \\
+            - Schmelzsicherungen sind bei einem Nennstromverhältnis von 1 : 1,6 selektiv. \\
+            - In der Reihe geschaltete Leitungsschutzschalter sind in der Regel bei Kurzschluss nicht selektiv (beide magnetischen Auslöser schalten ab).  
 \end{enumerate}
