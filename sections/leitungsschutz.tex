@@ -37,7 +37,7 @@ Beantworten Sie die unten aufgelisteten Aufgabestellungen. Eine Begründung Ihre
                 \includegraphics[width = 0.7\textwidth]{img/Stopsel_Aufbau_2.png}
             \end{figure}
             Die Sicherung stellt einen Überlastschutz und Kurzschlusschutz dar. Fließt ein zu hoher Strom, erhöht sich die Temperatur des Schmelzleiters, welcher 
-            direttissima \footnote{Direttissima: Direkt; der kürzeste Weg.} schmilzt. Die Stöpselsicherungen werden heutzutage nur vereinzelt in Häusern verwendet.
+            direttissima \footnote{Direttissima: Direkt; der kürzeste Weg. Ein bei Bergsteigen verwendeter Begriff.} schmilzt. Die Stöpselsicherungen werden heutzutage nur vereinzelt in Häusern verwendet.
             \clearpage
 
     \item   \question{Erklären Sie Aufbau und Funktion einer NH-Sicherung (+Skizze)}\\\\
@@ -53,7 +53,7 @@ Beantworten Sie die unten aufgelisteten Aufgabestellungen. Eine Begründung Ihre
             \end{minipage}
 
             Funktion: Abschaltung bei Überstrom oder Kurschluss. NH-Sicherungen sind für den Einbau in der Nähe von Transformatorstationen 
-            und als Hausanschlusssicherung eingesetzt.
+            und als Hausanschlusssicherung eingesetzt. Im Gegensatz zu Stöpselsicherungen können sie wesentlich höhere Kurzschlussströme abschalten.
 
     \item   \question{Worüber gibt die Betriebsklasse einer Schmelzsicherung auskunft?} \\\\
             Die Betriebsklasse gibt über die Verwendbarkeit von Sicherungen und ihre Strom-Zeit-Kennlinie auskunft.
@@ -69,11 +69,9 @@ Beantworten Sie die unten aufgelisteten Aufgabestellungen. Eine Begründung Ihre
     \item   \question{Unter welchen Bedingungen werden Schmelzsicherungen gegenüber Leitungsschutzschaltern bevorzugt? (+Beispiele)}\\\\
             Wenn Selektivität benötigt wird. \textcolor{red}{Bsp.:?????}
 
-    \clearpage
 
-
-    \item   \question{Erklären Sie Aufbau und Funktion eines Leitungsschutzschalters. Wie erfolgt die Auslösung bei einem Leitungsschutzschalter.}\\\\
-
+    \item   \question{Erklären Sie Aufbau und Funktion eines Leitungsschutzschalters. Wie erfolgt die Auslösung bei einem Leitungsschutzschalter.}
+            \clearpage
             \begin{figure}[!htp]
                 \centering
                 \includegraphics[width = 0.5\textwidth]{img/LSS_Aufbau.png}
@@ -84,18 +82,19 @@ Beantworten Sie die unten aufgelisteten Aufgabestellungen. Eine Begründung Ihre
             \end{figure}
 
             Ein Leitungsschutzschalter besitzt eine thermische (Überlastschutz) und magnetische (Kurzschlusschutz) Auslösung.
+            Der thermische Schutz wird durch einen Bimetallauslöser realisiert. Fließt ein zu hoher Strom, so erwärmt sich das Bimetall, 
+            was dazu führt, dass es sich biegt. Geschieht ein Kurzschluss, so zieht eine Magnetspule an und schaltet somit den Stromkreis sofort ab.
 
     \item   \question{Nennen Sie Vorteile von Leitungsschutzschaltern gegenüber Schmelzsicherungen.} \\\\
-            Können wieder eingeschalten werden $\rightarrow$ keine Ersatzsicherungen erforderlich $\rightarrow$ kein Einsetzen einer falschen Sicherung möglich. Zudem lösen sie bei Kurzschlussen schneller durch. Leitungsschutzschalter lassen sich nicht überbrücken.
-            Daraus folgt, dass Laien sich nicht mehr unter Gefahr setzen können. Sichere Bedienung. Kompakte Bauweise.  
-
-    \clearpage
+            Können wieder eingeschalten werden, was bedeutet, dass keine Ersatzsicherungen erforderlich sind. Es ist auch kein Einsetzen einer falschen Sicherung möglich. Zudem lösen sie bei Kurzschlussen schneller durch.
+            Leitungsschutzschalter lassen sich nicht überbrücken.
+            Daraus folgt, dass Laien sich nicht mehr unter Gefahr setzen können (Sichere Bedienung). Kompakte Bauweise.  
 
     \item   \question{Über welche Prüfströme  wird die Auslösecharakteristik und Fertigungstoleranz eines Leitungsschutzschalters festgelegt. Wie sind diese Prüfströme definiert?} \\\
             Es gibt folgende Auslösestrome:
 
             \begin{itemize}
-                \item Nichtauslösestrom: jener Strom, bei dem der LSS nicht auslösen darf. 1,13-fache des Bemessungsstroms.
+                \item Nichtauslösestrom: jener Strom, bei dem der LSS innerhalb der festgelegten Prüfdauer nicht auslösen darf. 1,13-fache des Bemessungsstroms.
                 \item Auslösestrom: jener Strom, bei dem der LSS innerhalb der festgelegten Prüfdauer ausschalten \textbf{muss}. 1,45-fache des Bemessungsstroms.
                 \item Sofortauslösestrom: jener Strom, bei dem der LSS innerhalb $\SI{0.1}{s}$ abschaltet. Er hängt von der Type ab.
             \end{itemize}
@@ -114,7 +113,16 @@ Beantworten Sie die unten aufgelisteten Aufgabestellungen. Eine Begründung Ihre
     \clearpage
 
     \item   \question{Ein Winkelschleifer hat einen Nennstrom von 6A und nimmt beim Einschalten kurzzeitig den 8fachen Strom auf. Wird ein klagloser Betrieb möglich sein, wenn der Stromkreis mit einem 13A LS-Schalter vom Typ B abgesichert ist oder schlagen Sie einen anderen Leitungsschutzschalter vor? (+Begründung)} \\\\
-            \textcolor{red}{TODO.} Ein Typ-C-Leitungsschutzschalter ist empfehlenswert.
+            Ein Typ-C-Leitungsschutzschalter ist empfehlenswert. Laut Prof. Dipl-Ing. Jakob Mühlbacher soll ein LSS nach Type B nur bei 
+            ohmschen Lasten eingesetzt werden. Selbst bei Leuchten (Stromstoß durch Kondensatoren) soll ein Typ C LSS verwendet werden.
+        
+            Laut Buch:
+
+            \begin{itemize}
+                \item[B] Verwendung bei Heizungen sowie Beleuchtungen und Haushaltsgeräte
+                \item[C] Verwendung bei Motoren, Handwerkzeuge
+                \item[D] Sonderfälle bei Industrie und Gewerbe
+            \end{itemize}
 
     \item   \question{Worauf muss man bei der Verwendung von LS-Schaltern der Type D im genullten Netz achten?} \\\\
             Die Ausschaltbedingung muss erfüllt sein. Ist diese nicht erfüllt, so ist die Nullung nicht wirksam. Es besteht Lebensgefahr.
@@ -123,11 +131,12 @@ Beantworten Sie die unten aufgelisteten Aufgabestellungen. Eine Begründung Ihre
 
             $$Z_S \le \frac{U_0}{I_A}$$
 
-            $I_A$ ist bei Type D besonders groß. 
+            $I_A$ ist bei Type D besonders groß. Dies kann eventuell dazu führen, dass die resultierende Schleifenimpedanz 
+            nicht mehr eingehalten werden kann.
 
     \item   \question{Was versteht man unter der Energiebegrenzungsklasse eines Leitungsschutzschalters? Welche Auswirkung hat eine hohe Energiebegrenzungsklasse?} \\\\
             Die Energiebegrenzungsklasse eines LS-Schalters ist ein Maß für die Durchlassenergie, die ein Schalter benötigt, um den Stromkreis zu öffnen $\left(I^2\cdot t\right)$.
-            Es gibt die Energiebegrenzungsklassen 1, 2 und 3. Je höher, desto niedriger ist die spezifische Durchlassenergie (bezogen auf den Bemessungsstrom), desto schneller schaltet der Schalter aus.         
+            Es gibt die Energiebegrenzungsklassen 1, 2 und 3. Je höher, desto niedriger ist die spezifische Durchlassenergie (bezogen auf den Bemessungsstrom), desto schneller schaltet der Schalter bei Kurzschluss aus.         
 \end{enumerate}
 
 \subsubsection{Ausschaltstrom / Selektivität}
@@ -135,13 +144,17 @@ Lösen Sie folgende Aufgabenstellungen zum Thema Ausschaltstrom / Selektivität
 
 \begin{enumerate}
     \item   \question{Wie ist der Ausschaltstrom von Überstromschutzorganen definiert?} \\\\
-            Der Ausschaltstrom ist jener Strom, der fließen muss, damit ein Überstromschutzorgan im Fehlerfall so schnell ausschaltet, dass keine Gefahr durch indirektes Berühren entsteht.
+            Der Ausschaltstrom ist jener Strom, der fließen muss, damit ein Überstromschutz\\organ im Fehlerfall so schnell ausschaltet, dass keine Gefahr durch indirektes Berühren entsteht.
             Dieser Strom wird als Vielfache des Nennstromes angegeben.
 
     \item   \question{Was versteht man unter Selektivität von Überstromschutzorgangen? Unter welcher Voraussetzung ist die Selektivität gegeben? Nennen Sie 2 einfache Regeln zur Selektivität.} \\\\
-            Selektivität bedeutet, dass im Fehelrfallse nur jenes Überstromschutzorgan abschaltet, das sich unmittelbar vor der Fehlerstelle befindet, und alle anderen betriebsbereit bleiben.
-            Durch die Selektivität wird die Betriebssicherheit einer Anlage erheblich verbessert.
-            2 Regeln: \\
-            - Schmelzsicherungen sind bei einem Nennstromverhältnis von 1 : 1,6 selektiv. \\
-            - In der Reihe geschaltete Leitungsschutzschalter sind in der Regel bei Kurzschluss nicht selektiv (beide magnetischen Auslöser schalten ab).  
+            Selektivität bedeutet, dass im Fehlerfallse nur jenes Überstromschutzorgan abschaltet, das sich unmittelbar vor der Fehlerstelle befindet, und alle anderen betriebsbereit bleiben.
+            Durch die Selektivität wird die Betriebssicherheit und Verfügbarkeit einer Anlage erheblich verbessert.
+            2 Regeln: 
+
+            \begin{itemize}
+                \item Schmelzsicherungen sind bei einem Nennstromverhältnis von 1 : 1,6 selektiv.
+                \item In Reihe geschaltete Leitungsschutzschalter sind in der Regel bei Kurzschluss nicht selektiv (beide magnetischen Auslöser schalten ab).  
+                \item Im Überstrombereich gilt das gleiche Verhältnis wie bei Schmelzsicherungen
+            \end{itemize}
 \end{enumerate}
