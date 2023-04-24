@@ -13,6 +13,7 @@
 \usepackage{lastpage}
 \usepackage{hyperref}
 \usepackage{filemod}
+\usepackage{datetime}
 
 \geometry{
     a4paper,
@@ -50,7 +51,7 @@
 
         \maketitle 
         \begin{center}
-            Zuletzt aktualisiert: \textbf{\filemodprintdate{\jobname}}
+            Zuletzt aktualisiert: \textbf{\today \, um \currenttime}
         \end{center}
         \clearpage
         \tableofcontents
@@ -59,7 +60,7 @@
     \lhead{ES1}
     \rhead{Fragenkatalog}
 
-    \lfoot{Zuletzt aktualisiert: \filemodprintdate{\jobname}}
+    \lfoot{Zuletzt aktualisiert: \textbf{\today \, um \currenttime}}
     \cfoot{}
     \rfoot{Seite \thepage / \pageref{LastPage}}
 
